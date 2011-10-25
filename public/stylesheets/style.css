@@ -73,7 +73,7 @@ ul {
 	text-indent: -9999px;
 	display: block;
 	margin-top: 10px;
-	padding-right: 46px;
+	padding-right: 43px;
 	float: left; }
 	
 #nav {
@@ -156,7 +156,7 @@ ul {
 
 #navbar ul ul li a:hover {
 	background: none;
-	color: #dddddd;
+	color: #464646;
 	display: block; }
 	
 #navbar ul ul li.lasts {

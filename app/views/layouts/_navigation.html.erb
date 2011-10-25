@@ -1,0 +1,52 @@
+<div class="inner">
+	
+	<div id="logo"><h1><a href="#">Beautifulwp</a></h1></div>
+	
+	<div id="navbar">
+	
+	<ul id="nav">
+	
+		<li><%= link_to "Home", 'home.html' %></li>
+		
+		<li><%= link_to "About", 'about.html' %></li>
+		
+		<li><%= link_to "Submit", 'submit.html' %></li>
+		
+		<li><%= link_to "Categories", '#' %>
+			
+			<ul id="nav-sub">
+
+              		<li class="first"><a href="#">Business</a></li>
+
+              		<li><a href="#">Creative</a></li>
+
+              		<li><a href="#">Retail</a></li>
+              		
+              		<li><a href="#">Mobile</a></li>
+              		
+              		<li class="lasts"><a href="#">Blog/Magazine</a></li>
+
+             </ul>
+		</li>
+		
+		<li><%= link_to "Blog", 'blog.html' %></li>
+		
+		<li class="border-r"><%= link_to "Contact", 'contact.html' %></li>
+	
+	</ul>
+	
+	</div>
+	
+	<div class="search-box">
+
+		<form class="search-form" action="#">
+
+			<input id="s" class="text" type="text" value="Search" name="s" />
+
+			<input class="submit" type="submit" value="Go" />
+
+		</form>
+			
+	</div><!-- end search box -->
+	
+</div><!-- end nav-inner -->
