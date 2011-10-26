@@ -66,15 +66,21 @@ ul {
 #navigation-top li.selected {
 	background: url(/images/nav_hover.png) repeat-x; }
 
+#logo {
+	float: left;
+	width: 148px;
+	height: 32px;
+	margin-top: 10px;
+	padding-right: 40px;
+}
+
 #logo a {
 	background: url(/images/logo.png) no-repeat;
 	width: 148px;
 	height: 32px;
 	text-indent: -9999px;
 	display: block;
-	margin-top: 10px;
-	padding-right: 43px;
-	float: left; }
+	overflow: auto; }
 	
 #nav {
 	height: 60px;
