@@ -13,8 +13,26 @@
 </head>
 
 <body>
+	
+	<div id="navigation-top">	
+		
+		<%= render 'layouts/navigation' %>
+	
+	</div><!-- end navigation-top -->
+	
+	<div class="clear"></div>
 
-<%= yield %>
+	<%= yield %>
+	
+	<div class="clear"></div>
+	
+	<%= debug(params) if Rails.env.development? %>
+	
+	<div id="footer">
+		
+		<%= render 'layouts/footer' %>	
+	
+	</div><!-- end footer -->
 
 </body>
 </html>
