@@ -2,7 +2,7 @@ require 'digest'
 class User < ActiveRecord::Base
   
   attr_accessor   :password
-  attr_accessible :name, :email, :password, :password_confirmation
+  attr_accessible :name, :email, :password, :password_confirmation, :username
   
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   
@@ -14,6 +14,8 @@ class User < ActiveRecord::Base
   validates :password, :presence     => true,
                        :confirmation => true,
                        :length       => { :within => 6..40 }
+  validates :username,  :presence => true,
+                        :length   => { :maximum => 15 }
   
   
   before_save :encrypt_password
@@ -51,16 +53,20 @@ end
 
 
 
+
+
+
 # == Schema Information
 #
 # Table name: users
 #
-#  id                 :integer         not null, primary key
+#  id                 :integer         primary key
 #  name               :string(255)
 #  email              :string(255)
 #  created_at         :datetime
 #  updated_at         :datetime
 #  encrypted_password :string(255)
 #  salt               :string(255)
+#  username           :string(255)
 #
 
