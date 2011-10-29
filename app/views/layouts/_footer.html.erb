@@ -8,13 +8,27 @@
 		
 			<li><%= link_to "About", about_path %></li>
 			
+			<% if signed_in? %>
+
+			<li><%= link_to "Profile", current_user %></li>
+			
+			<% else %>
+			
 			<li><%= link_to "Submit", submit_path %></li>
+
+			<% end %>
 			
 			<li><a href="#">Privacy</a></li>
 			
 			<li><a href="#">Terms Of Use</a></li>
 			
 			<li><a href="#">Beautiful Wordpress Themes</a></li>
+			
+			<% if signed_in? %>
+
+			<li><%= link_to "Sign Out", signout_path %></li>
+
+			<% end %>
 			
 			<li class="lt"><%= link_to "Contact", contact_path %></li>
 		
