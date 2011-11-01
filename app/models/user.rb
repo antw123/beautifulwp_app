@@ -13,9 +13,11 @@ class User < ActiveRecord::Base
                     :uniqueness => { :case_sensitive => false }
   validates :password, :presence     => true,
                        :confirmation => true,
-                       :length       => { :within => 6..40 } 
+                       :length       => { :within => 6..40 }
+  validates :username,  :presence => true,
+                        :length   => { :maximum => 15 } 
   
-  before_save :encrypt_password
+  before_save :encrypt_password, :create_username
   
   def has_password?(submitted_password)
     encrypted_password == encrypt(submitted_password)
@@ -32,8 +34,16 @@ class User < ActiveRecord::Base
     (user && user.salt == cookie_salt) ? user : nil
   end
   
-  private
+  def to_param
+    username
+  end
   
+  private
+    
+    def create_username
+      self.username = username.downcase
+    end
+    
     def encrypt_password
       self.salt = make_salt if new_record?
       self.encrypted_password = encrypt(password)
