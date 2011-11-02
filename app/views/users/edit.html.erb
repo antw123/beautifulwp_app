@@ -1,0 +1,49 @@
+<div id="main-content">
+	
+	<div id="full-content-bubble">
+		
+		<div id="full-content">
+			
+			<h2>Edit User</h2>
+			
+			<hr>
+			
+			<%= form_for(@user) do |f| %>
+			   <%= render 'shared/error_messages' %>
+			   <div class="field">
+				<%= f.label :name %><br />
+				<%= f.text_field :name %>
+			   </div>
+				
+				<div class="field">
+					<%= f.label :email %><br />
+					<%= f.text_field :email %>
+				</div>
+				
+				<div class="field">
+				<%= f.label :password %><br />
+				<%= f.password_field :password %>
+				</div>
+				
+				<div class="field">
+				<%= f.label :password_confirmation, "Verify Password" %><br />
+				<%= f.password_field :password_confirmation %>
+				</div>
+				
+				<div class="field">
+				<%= f.label :username %><br />
+				<%= f.text_field :username %>
+				</div>
+				
+				<div class="actions">
+				<%= f.submit "Update" %>
+			    </div>
+			<% end %>
+			<p>Find me in app/views/users/new.html.erb</p><br />
+			
+		
+		</div><!-- end full-content -->
+	
+	</div><!-- end full-content-bubble -->	
+
+</div><!-- end main-content -->
