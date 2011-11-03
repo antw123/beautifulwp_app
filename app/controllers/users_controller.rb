@@ -2,13 +2,16 @@ class UsersController < ApplicationController
   before_filter :authenticate, :only => [:edit, :update]
   before_filter :correct_user, :only => [:edit, :update]
   
+  def index
+  end
+  
   def new
     @title = "Sign Up"
     @user  = User.new 
   end
   
   def show
-    @user = User.find_by_username(params[:id])
+    correct_user
     @title = @user.name
   end
   
@@ -38,6 +41,9 @@ class UsersController < ApplicationController
     @title = "Edit User"
     render 'edit'
     end
+  end
+  
+  def destroy
   end
   
   private
