@@ -14,8 +14,9 @@ class User < ActiveRecord::Base
   validates :password, :presence     => true,
                        :confirmation => true,
                        :length       => { :within => 6..40 }
-  validates :username,  :presence => true,
-                        :length   => { :maximum => 15 } 
+  validates :username,  :presence   => true,
+                        :length     => { :maximum => 15 },
+                        :uniqueness => true 
   
   before_save :encrypt_password, :create_username
   
