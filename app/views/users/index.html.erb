@@ -1,0 +1,21 @@
+<div id="main-content">
+	
+	<div id="full-content-bubble">
+		
+		<div id="full-content">
+			
+			<h2>All Users</h2>
+			<hr>
+			<ul class="users">
+				<% @users.each do |user| %>
+				<li>
+					<%= link_to user.name, user_path(user) %>
+				</li>
+				<% end %>
+			</ul>
+		
+		</div><!-- end full-content -->
+	
+	</div><!-- end full-content-bubble -->	
+
+</div><!-- end main-content -->
