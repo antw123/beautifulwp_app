@@ -409,7 +409,7 @@ form.search-form {
 /* Pagination
 /* ----------------------------------------------------------------------- */	
 	
-#pagination {
+#pagination, .pagination {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -425,6 +425,7 @@ form.search-form {
 .current {
 	background-color: #fff;
 	color: #3a859c;
+	font-style: none;
 	font-size: 12px;
 	font-weight: bold;
 	margin-right: 6px;
@@ -433,9 +434,6 @@ form.search-form {
 	padding-bottom: 7px;
 	padding-left: 12px;
 	border-radius: 2px 2px 2px 2px; }
-	
-pagination-dots {
-	}
 	
 .not-current a {
 	background-color: #3a859c;
@@ -450,6 +448,26 @@ pagination-dots {
 	border-radius: 2px 2px 2px 2px; }
 	
 .not-current a:hover {
+	background-color: #468c3a; }
+	
+.pagination .disabled {
+	font-size: 12px;
+	font-color: #464646;
+}
+	
+a.next_page, .pagination a {
+	background-color: #3a859c;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	margin-right: 6px;
+	padding-top: 10px;
+	padding-right: 11px;
+	padding-bottom: 7px;
+	padding-left: 12px;
+	border-radius: 2px 2px 2px 2px; }
+
+a.next_page:hover, .pagination a:hover {
 	background-color: #468c3a; }
 	
 /* ----------------------------------------------------------------------- */

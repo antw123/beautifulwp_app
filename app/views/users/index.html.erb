@@ -5,7 +5,11 @@
 		<div id="full-content">
 			
 			<h2>All Users</h2>
+			
 			<hr>
+			
+			
+			
 			<ul class="users">
 				<% @users.each do |user| %>
 				<li>
@@ -14,11 +18,15 @@
 				<% end %>
 			</ul>
 			
+			
+			
 			<br />
 			<%= link_to 'Back', :back %>
 		
 		</div><!-- end full-content -->
 	
-	</div><!-- end full-content-bubble -->	
+	</div><!-- end full-content-bubble -->
+	
+			<%= will_paginate %>	
 
 </div><!-- end main-content -->
