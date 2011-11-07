@@ -4,6 +4,14 @@ class Showcase < ActiveRecord::Base
   
   belongs_to :user
   
+  validates :title, :presence => true
+  validates :author, :presence => true
+  validates :features, :presence => true
+  #validates :related, :presence => true
+  validates :price, :presence => true
+  validates :description, :presence => true
+
+  
   default_scope :order => 'showcases.created_at DESC'
 end
 
