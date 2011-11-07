@@ -16,6 +16,9 @@ two:
   price: 9.99
   description: MyText
 
+
+
+
 # == Schema Information
 #
 # Table name: showcases
@@ -29,5 +32,8 @@ two:
 #  description :text
 #  created_at  :datetime
 #  updated_at  :datetime
+#  user_id     :integer
+#  site        :string(255)
+#  site_url    :string(255)
 #
 

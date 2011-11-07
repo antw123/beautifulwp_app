@@ -7,6 +7,9 @@ class ShowcaseTest < ActiveSupport::TestCase
   end
 end
 
+
+
+
 # == Schema Information
 #
 # Table name: showcases
@@ -20,5 +23,8 @@ end
 #  description :text
 #  created_at  :datetime
 #  updated_at  :datetime
+#  user_id     :integer
+#  site        :string(255)
+#  site_url    :string(255)
 #
 

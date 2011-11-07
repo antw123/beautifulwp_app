@@ -1,6 +1,6 @@
 class Showcase < ActiveRecord::Base
   
-  attr_accessible :title, :author, :features, :related, :price, :description
+  attr_accessible :title, :author, :features, :related, :price, :description, :site, :site_url
   
   belongs_to :user
   
@@ -8,12 +8,18 @@ class Showcase < ActiveRecord::Base
   validates :author, :presence => true
   validates :features, :presence => true
   #validates :related, :presence => true
-  validates :price, :presence => true
+  validates :price, :presence     => true,
+                    :numericality => { :greater_than_or_equal_to => 0.01 }
   validates :description, :presence => true
+  validates :site, :presence => true
+  validates :site_url, :presence => true
 
   
   default_scope :order => 'showcases.created_at DESC'
 end
+
+
+
 
 # == Schema Information
 #
@@ -28,5 +34,8 @@ end
 #  description :text
 #  created_at  :datetime
 #  updated_at  :datetime
+#  user_id     :integer
+#  site        :string(255)
+#  site_url    :string(255)
 #
 

@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   
   def home
     @title = "Home"
+    @showcases = Showcase.all
   end
 
   def about
