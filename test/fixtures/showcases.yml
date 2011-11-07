@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  author: MyString
+  features: MyText
+  related: MyText
+  price: 9.99
+  description: MyText
+
+two:
+  title: MyString
+  author: MyString
+  features: MyText
+  related: MyText
+  price: 9.99
+  description: MyText
+
+# == Schema Information
+#
+# Table name: showcases
+#
+#  id          :integer         not null, primary key
+#  title       :string(255)
+#  author      :string(255)
+#  features    :text
+#  related     :text
+#  price       :decimal(8, 2)
+#  description :text
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+

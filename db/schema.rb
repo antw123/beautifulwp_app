@@ -10,7 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111104202412) do
+ActiveRecord::Schema.define(:version => 20111106212614) do
+
+  create_table "showcases", :force => true do |t|
+    t.string   "title"
+    t.string   "author"
+    t.text     "features"
+    t.text     "related"
+    t.decimal  "price",       :precision => 8, :scale => 2
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"
