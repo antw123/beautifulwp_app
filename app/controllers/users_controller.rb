@@ -16,6 +16,8 @@ class UsersController < ApplicationController
   def show
     correct_user
     @title = @user.name
+    @users = User.all
+    @showcases = Showcase.all
   end
   
   def create
