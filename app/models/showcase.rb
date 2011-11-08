@@ -8,8 +8,7 @@ class Showcase < ActiveRecord::Base
   validates :author, :presence => true
   validates :features, :presence => true
   #validates :related, :presence => true
-  validates :price, :presence     => true,
-                    :numericality => { :greater_than_or_equal_to => 0.01 }
+  validates :price, :presence => true
   validates :description, :presence => true
   validates :site, :presence => true
   validates :site_url, :presence => true

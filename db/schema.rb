@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(:version => 20111107212447) do
     t.string   "author"
     t.text     "features"
     t.text     "related"
-    t.decimal  "price",       :precision => 8, :scale => 2
+    t.string   "price"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
