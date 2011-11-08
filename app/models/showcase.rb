@@ -6,7 +6,10 @@ class Showcase < ActiveRecord::Base
   
   validates :title, :presence => true
   validates :author, :presence => true
-  validates :features, :presence => true
+  validates :feature1, :presence => true
+  validates :feature2, :presence => true
+  validates :feature3, :presence => true
+  validates :feature4, :presence => true
   #validates :related, :presence => true
   validates :price, :presence => true
   validates :description, :presence => true

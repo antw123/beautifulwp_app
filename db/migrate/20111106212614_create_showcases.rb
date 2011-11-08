@@ -3,8 +3,14 @@ class CreateShowcases < ActiveRecord::Migration
     create_table :showcases do |t|
       t.string :title
       t.string :author
-      t.text :features
-      t.text :related
+      t.string :feature1
+      t.string :feature2
+      t.string :feature3
+      t.string :feature4
+      t.string :related1
+      t.string :related2
+      t.string :related3
+      t.string :related4
       t.string :price
       t.text :description
 
