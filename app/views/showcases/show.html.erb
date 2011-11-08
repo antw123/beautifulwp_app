@@ -50,7 +50,7 @@
 							
 							<li><%= @showcase.feature4 %></li>
 							
-							<li><a href="#"><%= link_to "&amp; more", @showcase.site_url %>s</a></li>
+							<li><%= link_to "& more", @showcase.site_url %></li>
 						
 						</ul>
 					
@@ -59,16 +59,16 @@
 					<div id="theme-show-related">
 					
 						<h4>Related Themes</h4>
-						
+						    
 							<ul>
 								
-								<li><a href="#">Studeo Wordpress Theme</a></li>
+								<li><%= link_to @showcase.related1, @showcase.related_url1 %></li>
 								
-								<li><a href="#">Duplex Wordpress Theme</a></li>
+								<li><%= link_to @showcase.related2, @showcase.related_url2 %></li>
 								
-								<li><a href="#">Redux Wordpress Theme</a></li>
+								<li><%= link_to @showcase.related3, @showcase.related_url3 %></li>
 								
-								<li><a href="#">Memo Wordpress Theme</a></li>
+								<li><%= link_to @showcase.related4, @showcase.related_url4 %></li>
 							
 							</ul>
 					
@@ -76,7 +76,7 @@
 					
 					<div class="button-container">
 					
-					<a class="submit-main" href="#">Get This Theme</a>
+					<%= link_to "Get This Theme", @showcase.site_url, :class => "submit-main" %>
 					
 					</div><!-- end button-container -->
 				

@@ -1,6 +1,9 @@
 class Showcase < ActiveRecord::Base
   
-  attr_accessible :title, :author, :features, :related, :price, :description, :site, :site_url
+  attr_accessible :title, :author, :feature1, :feature2, :feature3, :feature4, 
+                                   :related1, :related_url1, :related2, :related_url2, :related3, 
+                                   :related_url3, :related4, :related_url4, :price, :description, 
+                                   :site, :site_url
   
   belongs_to :user
   
@@ -24,21 +27,32 @@ end
 
 
 
+
 # == Schema Information
 #
 # Table name: showcases
 #
-#  id          :integer         not null, primary key
-#  title       :string(255)
-#  author      :string(255)
-#  features    :text
-#  related     :text
-#  price       :string(255)
-#  description :text
-#  created_at  :datetime
-#  updated_at  :datetime
-#  user_id     :integer
-#  site        :string(255)
-#  site_url    :string(255)
+#  id           :integer         not null, primary key
+#  title        :string(255)
+#  author       :string(255)
+#  feature1     :string(255)
+#  feature2     :string(255)
+#  feature3     :string(255)
+#  feature4     :string(255)
+#  related1     :string(255)
+#  related2     :string(255)
+#  related3     :string(255)
+#  related4     :string(255)
+#  related_url1 :string(255)
+#  related_url2 :string(255)
+#  related_url3 :string(255)
+#  related_url4 :string(255)
+#  price        :string(255)
+#  description  :text
+#  created_at   :datetime
+#  updated_at   :datetime
+#  user_id      :integer
+#  site         :string(255)
+#  site_url     :string(255)
 #
 
