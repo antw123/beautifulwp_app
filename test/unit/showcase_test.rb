@@ -10,6 +10,7 @@ end
 
 
 
+
 # == Schema Information
 #
 # Table name: showcases
@@ -19,7 +20,7 @@ end
 #  author      :string(255)
 #  features    :text
 #  related     :text
-#  price       :decimal(8, 2)
+#  price       :string(255)
 #  description :text
 #  created_at  :datetime
 #  updated_at  :datetime

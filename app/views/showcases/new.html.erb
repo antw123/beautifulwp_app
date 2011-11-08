@@ -1,0 +1,62 @@
+<div id="main-content">
+	
+	<div id="full-content-bubble">
+		
+		<div id="full-content">
+			
+			<h2>Add New Theme</h2>
+			
+			<hr>
+			
+			<%= form_for(@showcase) do |f| %>
+			   <%= render 'shared/error_messages2' %>
+			   <div class="field">
+				<%= f.label :title %><br />
+				<%= f.text_field :title %>
+			   </div>
+				
+				<div class="field">
+					<%= f.label :author %><br />
+					<%= f.text_field :author %>
+				</div>
+				
+				<div class="field">
+				<%= f.label :features %><br />
+				<%= f.text_area :features %>
+				</div>
+				
+				<div class="field">
+				<%= f.label :price %><br />
+				<%= f.text_field :price %>
+				</div>
+				
+				<div class="field">
+				<%= f.label :description %><br />
+				<%= f.text_area :description %>
+				</div>
+				
+				<div class="field">
+				<%= f.label :site %><br />
+				<%= f.text_field :site %>
+				</div>
+				
+				<div class="field">
+				<%= f.label :site_url %><br />
+				<%= f.text_field :site_url %>
+				</div>
+				
+				<div class="actions">
+				<%= f.submit "Add Theme" %>
+			    </div>
+			<% end %>
+			
+			<p>Showcases#new<p>
+			<p>Find me in app/views/showcases/new.html.erb</p><br />
+			
+		
+		</div><!-- end full-content -->
+	
+	</div><!-- end full-content-bubble -->	
+
+</div><!-- end main-content -->
+

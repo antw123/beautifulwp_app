@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   def home
     @title = "Home"
     @showcases = Showcase.all
+    @showcase = Showcase.find_by_id(params[:id])
   end
 
   def about

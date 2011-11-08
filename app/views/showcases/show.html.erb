@@ -1,0 +1,118 @@
+<div id="main-content">
+
+	<div id="left-content">
+		
+		<div class="inner">
+		
+			<div class="theme-show">
+				
+				<div class="theme-show-left">
+				
+					<div class="title"><h3><%= @showcase.title %></h3></div>
+					
+					<span class="author-main">by <%= @showcase.author %></span>
+				
+				</div><!-- end theme-show-left -->
+				
+			
+			
+			<div class="theme-show-right">
+				
+				<span class="back-to"><a href="index.html">&laquo; <%= link_to 'Back to search results', :back %></a></span>
+				
+				<span class="show-pricing"><strong><%= @showcase.price %></strong> from <%= link_to @showcase.site, @showcase.site_url %></span>
+							
+			</div><!-- end theme-show-right -->
+			
+			<div class="clear"></div>
+				
+				<hr />
+				
+				<div class="theme-show-img">
+				
+					<a href="#"><img src="/images/theme1.jpg" alt="Studeo" /></a>
+				
+				</div>
+				
+				<div class="theme-show-features-related">
+					
+					<div id="theme-show-features">
+						
+						<h4>Features</h4>
+						
+						<ul>
+							
+							<li><%= @showcase.features %></li>
+							
+							<li>Filterable Portfolio</li>
+							
+							<li>Full Localisation Support</li>
+							
+							<li>4 Custom Widgets</li>
+							
+							<li><a href="#">&amp; more</a></li>
+						
+						</ul>
+					
+					</div><!-- end theme-show-features -->
+					
+					<div id="theme-show-related">
+					
+						<h4>Related Themes</h4>
+						
+							<ul>
+								
+								<li><a href="#">Studeo Wordpress Theme</a></li>
+								
+								<li><a href="#">Duplex Wordpress Theme</a></li>
+								
+								<li><a href="#">Redux Wordpress Theme</a></li>
+								
+								<li><a href="#">Memo Wordpress Theme</a></li>
+							
+							</ul>
+					
+					</div><!-- end theme-show-related -->
+					
+					<div class="button-container">
+					
+					<a class="submit-main" href="#">Get This Theme</a>
+					
+					</div><!-- end button-container -->
+				
+				</div><!-- end theme-show-features-related -->
+				
+				<div id="show-social">
+					
+					<img src="/images/facebook-show.jpg" alt="Facebook Show" />
+
+				</div><!-- end show-social -->
+				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla neque ac nibh luctus rutrum. In eu dolor ac turpis aliquam varius quis vitae lorem. Sed quis libero eros. Duis feugiat pretium dolor, in ultricies metus vestibulum sit amet. Fusce feugiat mollis sapien, </p>
+				
+				<div class="show-tags">
+					
+					<img src="/images/show-tags.jpg" alt="Show Tags" />
+				
+				</div><!-- end show-tags -->
+				
+					<% if current_user.admin? %>
+
+					<%= link_to "edit", edit_showcase_path(@showcase) %>
+					|
+					<%= link_to "delete", showcase_path(@showcase), :method => :delete, :confirm => "You Sure?",
+					  									   :title  => "Delete #{@showcase.title} by #{@showcase.author}" %>
+					<% end %>
+					
+			</div><!-- end theme-show -->
+		
+		</div><!-- end inner -->
+	
+	</div><!-- end left-content -->
+	
+	<div id="sidebar">
+
+	<%= render 'layouts/sidebar' %>
+
+	</div><!-- end sidebar -->
+</div>

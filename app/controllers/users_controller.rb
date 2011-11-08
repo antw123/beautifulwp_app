@@ -13,13 +13,6 @@ class UsersController < ApplicationController
     @user  = User.new 
   end
   
-  def show
-    correct_user
-    @title = @user.name
-    @users = User.all
-    @showcases = Showcase.all
-  end
-  
   def create
     @user = User.new(params[:user])
     if @user.save
@@ -30,6 +23,13 @@ class UsersController < ApplicationController
       @title = "Sign Up"
       render 'new'
     end
+  end
+  
+  def show
+    correct_user
+    @title = @user.name
+    @users = User.all
+    @showcases = Showcase.all
   end
   
   def edit
