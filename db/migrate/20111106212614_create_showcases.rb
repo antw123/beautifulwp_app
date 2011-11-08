@@ -11,6 +11,10 @@ class CreateShowcases < ActiveRecord::Migration
       t.string :related2
       t.string :related3
       t.string :related4
+      t.string :related_url1
+      t.string :related_url2
+      t.string :related_url3
+      t.string :related_url4
       t.string :price
       t.text :description
 
