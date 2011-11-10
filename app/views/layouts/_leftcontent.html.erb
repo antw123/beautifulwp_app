@@ -27,7 +27,7 @@
 		
 		<hr />
 		
-		<div class="theme-main-img"><a href="#"><img src="/images/theme1.jpg" alt="Studeo" /></a></div>
+		<div class="theme-main-img"><%= link_to image_tag(showcase.image_url(:thumb).to_s), showcase_path(showcase) %></div>
 			
 	</div><!-- end theme-main -->
     
