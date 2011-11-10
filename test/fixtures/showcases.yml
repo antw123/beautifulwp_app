@@ -21,6 +21,8 @@ two:
 
 
 
+
+
 # == Schema Information
 #
 # Table name: showcases
@@ -47,5 +49,7 @@ two:
 #  user_id      :integer
 #  site         :string(255)
 #  site_url     :string(255)
+#  image        :string(255)
+#  image_url    :string(255)
 #
 

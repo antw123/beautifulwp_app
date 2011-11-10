@@ -12,6 +12,8 @@ end
 
 
 
+
+
 # == Schema Information
 #
 # Table name: showcases
@@ -38,5 +40,7 @@ end
 #  user_id      :integer
 #  site         :string(255)
 #  site_url     :string(255)
+#  image        :string(255)
+#  image_url    :string(255)
 #
 

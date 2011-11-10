@@ -3,9 +3,11 @@ class Showcase < ActiveRecord::Base
   attr_accessible :title, :author, :feature1, :feature2, :feature3, :feature4, 
                                    :related1, :related_url1, :related2, :related_url2, :related3, 
                                    :related_url3, :related4, :related_url4, :price, :description, 
-                                   :site, :site_url
+                                   :site, :site_url, :image_url, :image
   
   belongs_to :user
+  mount_uploader :image, ImageUploader
+  
   
   validates :title, :presence => true
   validates :author, :presence => true
@@ -22,6 +24,8 @@ class Showcase < ActiveRecord::Base
   
   default_scope :order => 'showcases.created_at DESC'
 end
+
+
 
 
 
@@ -54,5 +58,7 @@ end
 #  user_id      :integer
 #  site         :string(255)
 #  site_url     :string(255)
+#  image        :string(255)
+#  image_url    :string(255)
 #
 

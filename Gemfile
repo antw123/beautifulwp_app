@@ -7,6 +7,8 @@ gem 'rails', '3.0.1'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'will_paginate', '~> 3.0.2'
+gem "mini_magick"
+gem "carrierwave"
 
 group :development do
 	gem "annotate", "~> 2.4.0"
