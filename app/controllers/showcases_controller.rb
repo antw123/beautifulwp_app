@@ -1,5 +1,7 @@
 class ShowcasesController < ApplicationController
   
+  before_filter :authenticate, :only => [:new, :edit, :update, :destroy]
+  
   def index
     redirect_to root_path
   end
@@ -47,5 +49,11 @@ class ShowcasesController < ApplicationController
     flash[:success] = "Theme Deleted"
     redirect_to root_path
   end
+  
+  private
+  
+    def authenticate
+      deny_access unless signed_in? && current_user.admin?
+    end
 
 end
