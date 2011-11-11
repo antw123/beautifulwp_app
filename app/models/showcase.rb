@@ -10,19 +10,33 @@ class Showcase < ActiveRecord::Base
   
   
   validates :title, :presence => true
+  
   validates :author, :presence => true
+  
   validates :feature1, :presence => true
+  
   validates :feature2, :presence => true
+  
   validates :feature3, :presence => true
+  
   validates :feature4, :presence => true
+  
   #validates :related, :presence => true
+  
   validates :price, :presence => true
+  
   validates :description, :presence => true
+  
   validates :site, :presence => true
+  
   validates :site_url, :presence => true
 
-  
   default_scope :order => 'showcases.created_at DESC'
+  
+  def to_param
+    "#{id}-#{title.downcase}"
+  end
+  
 end
 
 
