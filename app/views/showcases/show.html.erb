@@ -97,7 +97,7 @@
 				
 				</div><!-- end show-tags -->
 				
-					<% if current_user.admin? %>
+					<% if signed_in? && current_user.admin? %>
 
 					<%= link_to "edit", edit_showcase_path(@showcase) %>
 					|
