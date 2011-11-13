@@ -18,7 +18,7 @@
 			
 			<div class="theme-show-right">
 				
-				<span class="back-to"><a href="index.html">&laquo; <%= link_to 'Back to search results', :back %></a></span>
+				<span class="back-to"><a href="index.html"><!--&laquo;--><%= link_to '« Back to search results', :back %></a></span>
 				
 				<span class="show-pricing"><strong><%= @showcase.price %></strong> from <%= link_to @showcase.site, @showcase.site_url %></span>
 							
@@ -89,7 +89,7 @@
 
 				</div><!-- end show-social -->
 				
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla neque ac nibh luctus rutrum. In eu dolor ac turpis aliquam varius quis vitae lorem. Sed quis libero eros. Duis feugiat pretium dolor, in ultricies metus vestibulum sit amet. Fusce feugiat mollis sapien, </p>
+				<p><%= @showcase.description %></p>
 				
 				<div class="show-tags">
 					

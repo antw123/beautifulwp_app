@@ -95,7 +95,7 @@ ul {
 	
 #nav li a {
 	background-color: transparent;
-	border-left: 1px solid #337083;
+	/*border-left: 1px solid #337083;*/
 	height: 11px;
 	color: #ffffff;
 	display: inline-block;
@@ -107,8 +107,8 @@ ul {
 	font-weight: bold;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6); }
 	
-#nav li.border-r a {
-	border-right: 1px solid #337083; }
+/*#nav li.border-r a {
+	border-right: 1px solid #337083; } */
 
 #nav li a:hover {
 	background: url(/images/nav_hover.png) repeat-x; }
@@ -209,11 +209,12 @@ form.search-form {
 .search-form .text {
 	background: none;
 	width: 120px;
-	font-weight: bold;
+	font-weight: none;
 	font-family: Helvetica;
 	padding-left: 20px;
 	padding-top: 5px;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6); }
+	color: #eeeeee;
+	/*text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6); */}
 
 .search-form .submit {
 	background: url(/images/search.png) no-repeat;
@@ -236,7 +237,7 @@ form.search-form {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 91px; }
+	margin-top: 80px; }
 	
 #left-content { 
 	width: 632px;
@@ -448,7 +449,7 @@ form.search-form {
 	border-radius: 2px 2px 2px 2px; }
 	
 .not-current a:hover {
-	background-color: #468c3a; }
+	background-color: #f55d2d; }
 	
 .pagination .disabled {
 	font-size: 12px;
@@ -468,7 +469,7 @@ a.next_page, .pagination a {
 	border-radius: 2px 2px 2px 2px; }
 
 a.next_page:hover, .pagination a:hover {
-	background-color: #468c3a; }
+	background-color: #f55d2d; }
 	
 /* ----------------------------------------------------------------------- */
 /* Sidebar

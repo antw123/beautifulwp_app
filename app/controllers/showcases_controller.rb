@@ -12,7 +12,7 @@ class ShowcasesController < ApplicationController
   end
   
   def create
-    @showcase = Showcase.new(params[:showcase])
+    @showcase = current_user.showcases.build(params[:showcase])
     if @showcase.save
       flash[:success] = "Theme Successfully Added!"
       redirect_to showcase_path(@showcase)
@@ -36,7 +36,7 @@ class ShowcasesController < ApplicationController
     @showcase = Showcase.find_by_id(params[:id])
     if @showcase.update_attributes(params[:showcase])
       flash[:success] = "Update Successful!"
-      redirect_to root_path
+      redirect_to showcase_path(@showcase)
     else
       @title = "Edit Theme"
       render 'edit'
@@ -46,14 +46,11 @@ class ShowcasesController < ApplicationController
   def destroy
     @showcase = Showcase.find_by_id(params[:id])
     @showcase.destroy
-    flash[:success] = "Theme Deleted"
+    flash[:success] = "Theme Successfully Deleted"
     redirect_to root_path
   end
   
   private
   
-    def authenticate
-      deny_access unless signed_in? && current_user.admin?
-    end
 
 end
