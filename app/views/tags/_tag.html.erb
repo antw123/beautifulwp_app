@@ -1,56 +1,35 @@
-
 <div class="inner">
 
 	<!-- test ruby erb code -->
-	
+
 	<% @showcases.each do |showcase| %>
-	
+
 	<div class="<%= cycle('theme-main', 'theme-main lts') %>">
-		
+
 		<div class="theme-main-left">
-		
+
 		<div class="title"><h3><%= link_to showcase.title, showcase_path(showcase) %></h3></div>
-		
+
 		<span class="author-main"><%= link_to "by #{showcase.author}", showcase_path(showcase) %></span>
-		
+
 	</div><!-- end theme-main-left -->
-	
+
 	<div class="theme-main-right">
-		
+
 		<span class="main-pricing"><strong><%= showcase.price %></strong> from <%= link_to showcase.site, showcase.site_url %></span>
-		
+
 		<span class="get-it"><%= link_to "Get it", showcase.site_url %></span>
-		
+
 	</div><!-- end theme-main-right -->
-	
+
 	<div class="clear"></div>
-		
+
 		<hr />
-		
+
 		<div class="theme-main-img"><%= link_to image_tag(showcase.image_url(:thumb).to_s), showcase_path(showcase) %></div>
-			
+
 	</div><!-- end theme-main -->
-    
+
     <% end %>
 
 </div><!-- end inner -->
-
-<div class="clear"></div>
-
-<div id="pagination">
-	
-	<span class="pages">Page 1 of 5</span>
-	
-	<span class="current">1</span>
-	
-	<span class="not-current"><a href="#">2</a></span>
-	
-	<span class="not-current"><a href="#">3</a></span>
-	
-	<span class="not-current"><a href="#">4</a></span>
-	
-	<span class="not-current"><a href="#">5</a></span>
-	
-	<span class="not-current"><a href="#">Last &raquo;</a></span>
-
-</div><!-- end pagination -->

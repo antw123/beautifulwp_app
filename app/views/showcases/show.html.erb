@@ -94,6 +94,14 @@
 				<div class="show-tags">
 					
 					<img src="/images/show-tags.jpg" alt="Show Tags" />
+					<ul> 
+					<% @showcase.tags.each do |tag| %>
+					
+					<li><%= link_to tag.name, tag_path(:id => tag.name) %></li>
+					
+					<% end %>
+					
+					</ul>
 				
 				</div><!-- end show-tags -->
 				

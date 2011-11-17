@@ -3,6 +3,7 @@ BeautifulwpApp::Application.routes.draw do
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
   resources :showcases
+  resources :tags,     :only => [:show]
 
   root              :to => "pages#home"
   

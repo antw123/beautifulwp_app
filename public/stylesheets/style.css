@@ -49,6 +49,10 @@ ul {
 /* Navigation
 /* ----------------------------------------------------------------------- */
 
+#navbar {
+	float: left;
+	margin-left: 20px;
+}
 #navigation-top {
 	background: url(/images/nav_top.png) repeat;
 	height: 54px;
@@ -71,7 +75,6 @@ ul {
 	width: 148px;
 	height: 32px;
 	margin-top: 10px;
-	padding-right: 40px;
 }
 
 #logo a {
@@ -100,11 +103,11 @@ ul {
 	color: #ffffff;
 	display: inline-block;
 	font-size: 12px;
-	padding-top: 20px;
-	padding-right: 25px;
+	padding-top: 21px;
+	padding-right: 15px;
 	padding-bottom: 20px;
-	padding-left: 25px;
-	font-weight: bold;
+	padding-left: 15px;
+	/*font-weight: bold;*/
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6); }
 	
 /*#nav li.border-r a {
@@ -182,9 +185,9 @@ ul {
 /* ----------------------------------------------------------------------- */
 	
 .search-box {
-	float: right;
+    float: right;
 	position: relative;
-	margin-top: -50px;}
+	margin-top: 10px;}
 	
 form.search-form {
 	background: url(/images/search_input.png) no-repeat;
@@ -237,7 +240,7 @@ form.search-form {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 80px; }
+	margin-top: 74px; }
 	
 #left-content { 
 	width: 632px;
@@ -269,6 +272,10 @@ form.search-form {
 	font-size: 20px;
 	color: #464646;
 	margin-bottom: 0px; }
+
+.tagged-show {
+	padding-bottom: 20px; 
+}
 	
 #main-bubble p {
 	margin-left: 15px;
@@ -825,12 +832,27 @@ a.submit-main:active{
 	margin-bottom: 40px; }
 	
 	
-.error, .notice, .success {padding:.8em;margin-bottom:1em;border:2px solid #ddd; margin-top: 50px;}
+.error, .notice, .success {
+	    padding:.8em; 
+	    margin-bottom: 1em;
+	    border: 2px solid #ddd; 
+	    margin-top: 50px;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10; }
+
 .error {background:#FBE3E4;color:#8a1f11;border-color:#FBC2C4;}
+
 .notice {background:#FFF6BF;color:#514721;border-color:#FFD324;}
+
 .success {background:#E6EFC2;color:#264409;border-color:#C6D880;}
+
 .error a {color:#8a1f11;}
+
 .notice a {color:#514721;}
+
 .success a {color:#264409;}
 
 
