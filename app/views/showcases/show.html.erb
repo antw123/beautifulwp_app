@@ -95,9 +95,10 @@
 					
 					<img src="/images/show-tags.jpg" alt="Show Tags" />
 					<ul> 
+					
 					<% @showcase.tags.each do |tag| %>
 					
-					<li><%= link_to tag.name, tag_path(:id => tag.name) %></li>
+					<li><%= link_to tag.name, {:id => tag.name } %></li>
 					
 					<% end %>
 					
@@ -107,10 +108,12 @@
 				
 					<% if signed_in? && current_user.admin? %>
 
-					<%= link_to "edit", edit_showcase_path(@showcase) %>
+					<%= link_to "Edit", edit_showcase_path(@showcase) %>
 					|
-					<%= link_to "delete", showcase_path(@showcase), :method => :delete, :confirm => "You Sure?",
+					<%= link_to "Delete", showcase_path(@showcase), :method => :delete, :confirm => "You Sure?",
 					  									   :title  => "Delete #{@showcase.title} by #{@showcase.author}" %>
+					|
+					<%= link_to 'Add New Theme', new_showcase_path %>
 					<% end %>
 					
 			</div><!-- end theme-show -->

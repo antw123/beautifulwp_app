@@ -16,15 +16,15 @@
 			
 			<ul id="nav-sub">
 
-              		<li class="first"><a href="#">Business</a></li>
+              		<li class="first"><%= link_to "Business", :controller => 'tags', :action => 'show', :id => 'business' %></li>
 
-              		<li><a href="#">Creative</a></li>
+              		<li><%= link_to "Creative", :controller => 'tags', :action => 'show', :id => 'creative' %></li>
 
-              		<li><a href="#">Retail</a></li>
+              		<li><%= link_to "Retail", :controller => 'tags', :action => 'show', :id => 'retail' %></li>
               		
-              		<li><a href="#">Mobile</a></li>
+              		<li><%= link_to "Mobile", :controller => 'tags', :action => 'show', :id => 'mobile' %></li>
               		
-              		<li class="lasts"><a href="#">Blog/Magazine</a></li>
+              		<li class="lasts"><%= link_to "Blog", :controller => 'tags', :action => 'show', :id => 'blog' %></li>
 
              </ul>
 		</li>
@@ -38,14 +38,22 @@
 	</div>
 	
 	<div class="search-box">
+		
+		<%= form_tag showcases_path, :method => 'get', :class => 'search-form' do %>
 
-		<form class="search-form" action="#">
+	      <%= text_field_tag :search, params[:search] ||= 'Search...', :class => 'text' %>
+
+		  <%= submit_tag "Search", :name => nil, :class => 'submit' %> 
+		
+		<% end %>
+
+		<!-- <form class="search-form" action="#">
 
 			<input id="s" class="text" type="text" value="Search..." name="s" />
 
 			<input class="submit" type="submit" value="Go" />
 
-		</form>
+		</form> -->
 			
 	</div><!-- end search box -->
 	

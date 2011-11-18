@@ -9,6 +9,10 @@ class Showcase < ActiveRecord::Base
   acts_as_taggable
   mount_uploader :image, ImageUploader
   
+  searchable do
+    text :title, :author, :feature1, :feature2, :feature3, :feature4, :description, :tag_list
+  end
+  
   
   validates :title, :author, :feature1, :feature2, 
             :feature3, :feature3, :feature4, :price,
@@ -19,7 +23,7 @@ class Showcase < ActiveRecord::Base
   default_scope :order => 'showcases.created_at DESC'
   
   def to_param
-  "#{id}-#{title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-by-#{author.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}"
+    "#{id}-#{title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-by-#{author.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}"
   end
     
 end

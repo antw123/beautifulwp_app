@@ -2,7 +2,7 @@ BeautifulwpApp::Application.routes.draw do
 
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
-  resources :showcases
+  resources :showcases 
   resources :tags,     :only => [:show]
 
   root              :to => "pages#home"
@@ -13,6 +13,7 @@ BeautifulwpApp::Application.routes.draw do
   match '/signup',  :to => 'users#new'
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
+
 
 
 

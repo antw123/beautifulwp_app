@@ -4,21 +4,13 @@
 		
 		<div id="main-bubble">
 
-			<% if params[:search].blank? %>
-			
-			<%= render 'layouts/main_bubble' %>
-			
-			<% else %>
-		 	
 			<h2 class="tagged-show">Search Results</h2>
-			
-			<% end %>
 
 			<div class="clear"></div>
 
 		</div><!-- end main-bubble -->
 		
-	<%= render 'layouts/leftcontent' %>
+		<%= render 'search_results' %>
 	
 	</div><!-- end left-content -->
 	

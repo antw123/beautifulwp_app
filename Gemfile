@@ -11,6 +11,7 @@ gem "mini_magick"
 gem "carrierwave"
 gem "friendly_id", "~> 4.0.0.beta14"
 gem 'acts-as-taggable-on', '~>2.1.0'
+gem 'sunspot_rails'
 
 group :development do
 	gem "annotate", "~> 2.4.0"

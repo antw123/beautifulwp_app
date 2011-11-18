@@ -133,7 +133,8 @@ ul {
 	padding-top: 10px;
 	padding-right: 0px;
 	padding-left: 0px;
-	margin-left: 1px; }
+	margin-left: 1px;
+	z-index: 50; }
 
 #navbar li:hover ul {
 	display: block;
@@ -148,7 +149,8 @@ ul {
 	padding-right: 15px;
 	padding-bottom: 0px;
 	padding-left: 15px;
-	width: 123px; }
+	width: 123px;
+	z-index: 50; }
 
 #navbar ul ul li a {
 	padding-top: 9px;
@@ -161,12 +163,14 @@ ul {
 	font-weight: normal;
 	border-bottom: 1px solid #d5d5d5;
 	border-left: none;
-	text-shadow: none; }
+	text-shadow: none;
+	z-index: 50; }
 
 #navbar ul ul li a:hover {
 	background: none;
 	color: #464646;
-	display: block; }
+	display: block;
+	z-index: 50; }
 	
 #navbar ul ul li.lasts {
 	-moz-border-radius-bottomleft:3px;
