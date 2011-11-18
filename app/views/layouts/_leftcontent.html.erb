@@ -32,7 +32,9 @@
 		<span class="get-it">
 		
 		<% if signed_in? && current_user.admin? %>
-
+		
+		<%= link_to 'Add', new_showcase_path %>
+		|
 		<%= link_to "Edit", edit_showcase_path(showcase) %>
 		|
 		<%= link_to "Delete", showcase_path(showcase), :method => :delete, :confirm => "You Sure?",
@@ -52,20 +54,4 @@
 
 <div class="clear"></div>
 
-<div id="pagination">
-	
-	<span class="pages">Page 1 of 5</span>
-	
-	<span class="current">1</span>
-	
-	<span class="not-current"><a href="#">2</a></span>
-	
-	<span class="not-current"><a href="#">3</a></span>
-	
-	<span class="not-current"><a href="#">4</a></span>
-	
-	<span class="not-current"><a href="#">5</a></span>
-	
-	<span class="not-current"><a href="#">Last &raquo;</a></span>
-
-</div><!-- end pagination -->
+<%= will_paginate @showcases %>

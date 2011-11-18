@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   
   def home
     @title = "Home"
-    @showcases = Showcase.all
+    @showcases = Showcase.paginate(:page => params[:page], :per_page => 4)
     @showcase = Showcase.find_by_id(params[:id])
   end
 
