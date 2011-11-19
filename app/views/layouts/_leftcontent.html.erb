@@ -29,7 +29,7 @@
 		
 		<div class="theme-main-img"><%= link_to image_tag(showcase.image_url(:thumb).to_s), showcase_path(showcase) %></div>
 		
-		<span class="get-it">
+		<span class="get-it-index">
 		
 		<% if signed_in? && current_user.admin? %>
 		
@@ -55,3 +55,7 @@
 <div class="clear"></div>
 
 <%= will_paginate @showcases %>
+
+
+
+

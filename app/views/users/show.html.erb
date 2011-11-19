@@ -6,22 +6,33 @@
 			
 			<h2>Hello, <%= @user.username.capitalize %></h2>
 			<hr>
-			<p><%= link_to 'View Themes', '/' %></p> <br />
-			<p><%= link_to 'Account Settings', edit_user_path(current_user) %></p> <br />
-			<% if current_user.admin? %>
-			<p><%= link_to 'Add New Theme', new_showcase_path %></p> <br />
-			<p><%= link_to 'Users', users_path %></p> <br />
+			
+			<div class="user-show-left">
+				
+				<p><%= link_to 'View Themes', '/' %></p> <br />
+				<p><%= link_to 'Account Settings', edit_user_path(current_user) %></p> <br />
+				<% if current_user.admin? %>
+				<p><%= link_to 'Add New Theme', new_showcase_path %></p> <br />
+				<p><%= link_to 'Users', users_path %></p> <br />
+				<% end %>
+				<p><%= link_to "Sign Out", signout_path %></p> <br />
+			
+			</div><!-- end user-show-left -->
+			
+			<div class="user-show-right">
+			
+				<% if current_user.admin? %>
+				<h3>Users</h3>
+				<p><%= @users.count %></p>
+			
+				<h3>Showcases</h3>
+				<p><%= @showcases.count %></p>
+			
 			<% end %>
-			<p><%= link_to "Sign Out", signout_path %></p> <br />
 			
-			<% if current_user.admin? %>
-			<h3>Users</h3>
-			<p><%= @users.count %></p>
+			</div><!-- end users-show-right -->
 			
-			<h3>Showcases</h3>
-			<p><%= @showcases.count %></p>
-			
-			<% end %>
+			<div class="clear"></div>
 		
 		</div><!-- end full-content -->
 	
