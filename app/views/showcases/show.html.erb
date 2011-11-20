@@ -60,17 +60,26 @@
 					
 						<h4>Related Themes</h4>
 						    
-							<ul>
+						<ul> 
+					
+						<% @showcases.each do |showcase| %>
+					
+						<li><%= link_to showcase.title, showcase_path(showcase) %></li>
+					
+						<% end %>
+					
+						</ul>
+							<!--<ul>
 								
-								<li><%= link_to @showcase.related1, @showcase.related_url1 %></li>
+								<li><%#= link_to @showcase.related1, @showcase.related_url1 %></li>
 								
-								<li><%= link_to @showcase.related2, @showcase.related_url2 %></li>
+								<li><%#= link_to @showcase.related2, @showcase.related_url2 %></li>
 								
-								<li><%= link_to @showcase.related3, @showcase.related_url3 %></li>
+								<li><%#= link_to @showcase.related3, @showcase.related_url3 %></li>
 								
-								<li><%= link_to @showcase.related4, @showcase.related_url4 %></li>
+								<li><%#= link_to @showcase.related4, @showcase.related_url4 %></li>
 							
-							</ul>
+							</ul> -->
 					
 					</div><!-- end theme-show-related -->
 					
@@ -91,8 +100,6 @@
 				<p><%= @showcase.description %></p>
 
 					<div class="show-tags-container">
-					
-						<!-- <img src="/images/show-tags.jpg" alt="Show Tags" /> -->
 					
 						<ul class="show-tags"> 
 					

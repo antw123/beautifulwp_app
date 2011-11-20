@@ -1,8 +1,7 @@
 class Showcase < ActiveRecord::Base
   
   attr_accessible :title, :author, :feature1, :feature2, :feature3, :feature4, 
-                                   :related1, :related_url1, :related2, :related_url2, :related3, 
-                                   :related_url3, :related4, :related_url4, :price, :description, 
+                                   :price, :description, 
                                    :site, :site_url, :image_url, :image, :remote_image_url, :tag_list
   
   belongs_to :user
