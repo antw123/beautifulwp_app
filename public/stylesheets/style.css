@@ -293,22 +293,13 @@ form.search-form {
 #social-main {
 	position: absolute;
 	right: 15px;
-	bottom: 12px;
+	bottom: 10px;
 	padding-top: 0px; }
 	
 #facebook {
-	background: url(/images/facebook.jpg) no-repeat;
-	width: 78px;
-	height: 20px;
-	text-indent: -9999px;
-	display: inline-block;
-	padding-right: 10px; }
+	display: inline-block; }
 	
 #twitter {
-	background: url(/images/twitter.jpg) no-repeat;
-	width: 96px;
-	height: 20px;
-	text-indent: -9999px;
 	display: inline-block; }
 	
 /* ----------------------------------------------------------------------- */
@@ -1000,6 +991,8 @@ a.submit-main:active{
 .back-to a:hover {
 	color: #f55d2d;
 }
+
+
 
 
 
