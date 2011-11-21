@@ -857,7 +857,7 @@ a.submit-main:active{
 	margin-left: 15px;
 	color: #464646;
 	line-height: 22px;
-	margin-bottom: 12px; }
+	margin-bottom: 30px; }
 	
 .show-tags-container {
 	width: 350px;
@@ -971,6 +971,37 @@ a.submit-main:active{
 	margin-left: 25px;
 	margin-bottom: 10px; 
 }
+
+.users  {
+	color: #696969;
+	font-size: 12px;
+}
+
+.users li {
+	margin-top: 15px;
+}
+.users a {
+	color: #696969; 
+	font-size: 13px;
+}
+.users a:hover {
+	color: #f55d2d;
+}
+
+.back-to {
+	margin-top: 30px;
+}
+
+.back-to a {
+	color: #696969; 
+	font-size: 13px;
+}
+
+.back-to a:hover {
+	color: #f55d2d;
+}
+
+
 
 
 

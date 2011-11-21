@@ -4,7 +4,7 @@
 	
 	<div id="navbar">
 	
-	<ul id="nav">
+	<ul id="nav" class="sf-menu">
 	
 		<li><%= link_to "Home", root_path %></li>
 		
@@ -41,7 +41,7 @@
 		
 		<%= form_tag showcases_path, :method => 'get', :class => 'search-form' do %>
 
-	      <%= text_field_tag :search, params[:search] ||= 'Search...', :class => 'text' %>
+	      <%= text_field_tag :search, params[:search] ||= 'Search...', :class => 'text', :id => 's' %>
 
 		  <%= submit_tag "Search", :name => nil, :class => 'submit' %> 
 		
