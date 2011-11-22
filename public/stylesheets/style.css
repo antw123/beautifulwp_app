@@ -264,10 +264,10 @@ form.search-form {
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid #bfc5c8;
-	border-top: 1px solid #bfc5c8;
-	border-left: 1px solid #bfc5c8;
-	border-right: 1px solid #bfc5c8;
+	border-bottom: 1px solid #cfcfcf;
+	border-top: 1px solid #cfcfcf;
+	border-left: 1px solid #cfcfcf;
+	border-right: 1px solid #cfcfcf;
 	position: relative; }
 	
 #main-bubble h2 {
@@ -323,10 +323,10 @@ form.search-form {
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-	border-left: 1px solid #bfc5c8;
-	border-right: 1px solid #bfc5c8;
-	border-bottom: 1px solid #bfc5c8;
-	border-top: 1px solid #bfc5c8;
+	border-left: 1px solid #cfcfcf;
+	border-right: 1px solid #cfcfcf;
+	border-bottom: 1px solid #cfcfcf;
+	border-top: 1px solid #cfcfcf;
 	position: relative; }
 	
 .theme-main-left {
@@ -511,9 +511,9 @@ a.next_page:hover, .pagination a:hover {
 
 #footer {
 	background: url(/images/footer_bg.png) repeat;
-	border-top: 1px solid #bfc5c8;
+	border-top: 1px solid #cfcfcf;
 	width: 100%;
-	height: 50px;
+	height: 45px;
 	position: fixed;
 	bottom: 0; }
 	
@@ -523,7 +523,7 @@ a.next_page:hover, .pagination a:hover {
 	
 .inner #copyright {
 	float: left;
-	margin-top: 20px;
+	margin-top: 17px;
 	font-size: 12px;
 	font-weight: bold;
 	color: #878787; }
@@ -537,7 +537,7 @@ a.next_page:hover, .pagination a:hover {
 	font-weight: bold;
 	color: #3a859c;
 	padding-right: 17px;
-	margin-top: 20px; }
+	margin-top: 17px; }
 
 #footer-ul li.lt {
 	padding-right: 0px; }
@@ -553,10 +553,10 @@ a.next_page:hover, .pagination a:hover {
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid #bfc5c8;
-	border-top: 1px solid #bfc5c8;
-	border-left: 1px solid #bfc5c8;
-	border-right: 1px solid #bfc5c8;
+	border-bottom: 1px solid #cfcfcf;
+	border-top: 1px solid #cfcfcf;
+	border-left: 1px solid #cfcfcf;
+	border-right: 1px solid #cfcfcf;
 	position: relative; }
 	
 #full-content {
@@ -667,10 +667,10 @@ a.next_page:hover, .pagination a:hover {
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-	border-left: 1px solid #bfc5c8;
-	border-right: 1px solid #bfc5c8;
-	border-bottom: 1px solid #bfc5c8;
-	border-top: 1px solid #bfc5c8;
+	border-left: 1px solid #cfcfcf;
+	border-right: 1px solid #cfcfcf;
+	border-bottom: 1px solid #cfcfcf;
+	border-top: 1px solid #cfcfcf;
 	position: relative;
 	margin-bottom: 118px; }
 	
