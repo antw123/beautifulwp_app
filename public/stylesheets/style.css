@@ -978,7 +978,7 @@ a.submit-main:active{
 	color: #f55d2d;
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:640px){
 		
 		#navigation-top .inner {
 			width:300px;
