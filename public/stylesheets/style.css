@@ -989,7 +989,7 @@ a.submit-main:active{
 			margin-right: auto;
 			width: 116px;
 			height: 28px;
-			margin-top: 12px;
+			margin-top: 11px;
 		}
 		
 		#logo a {
@@ -1000,6 +1000,9 @@ a.submit-main:active{
 		#navbar {
 			float:right;
 		}
+		
+		#navigation-top {
+			height: 54px; }
 		
 		#nav li a {
 			padding-right: 6px;
@@ -1078,18 +1081,9 @@ a.submit-main:active{
 			bottom: 5px;
 			margin-bottom: 0px; }
 			
-		#footer .inner {
-			width: 300px;}
-
-		.inner #copyright {
-			float: left;
-			margin-top: 17px;
-			font-size: 12px;
-			font-weight: bold;
-			color: #878787; }
-
-		#footer-nav {
-			display:none; }
+		#footer {
+			display: none;
+		}
 		                    
 
 }
