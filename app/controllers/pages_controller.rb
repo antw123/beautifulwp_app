@@ -11,6 +11,7 @@ class PagesController < ApplicationController
   end
 
   def submit
+    redirect_to contact_path
   end
 
   def contact

@@ -20,7 +20,7 @@
 				
 				<span class="back-to"><a href="index.html"><!--&laquo;--><%= link_to '« Back to previous page', :back %></a></span>
 				
-				<span class="show-pricing"><strong><%= @showcase.price %></strong> from <%= link_to @showcase.site, @showcase.site_url %></span>
+				<span class="show-pricing"><strong><%= @showcase.price %></strong> from <%= link_to @showcase.site, @showcase.site_url, :target => '_blank' %></span>
 							
 			</div><!-- end theme-show-right -->
 			
@@ -50,7 +50,7 @@
 							
 							<li><%= @showcase.feature4 %></li>
 							
-							<li><%= link_to "& more", @showcase.site_url %></li>
+							<li><%= link_to "& more", @showcase.site_url, :target => '_blank' %></li>
 						
 						</ul>
 					
@@ -85,7 +85,7 @@
 					
 					<div class="button-container">
 					
-					<%= link_to "Get This Theme", @showcase.site_url, :class => "submit-main" %>
+					<%= link_to "Get This Theme", @showcase.site_url, :class => "submit-main", :target => '_blank' %>
 					
 					</div><!-- end button-container -->
 				

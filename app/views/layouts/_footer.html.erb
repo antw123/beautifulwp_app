@@ -12,14 +12,12 @@
 
 			<li><%= link_to "Profile", current_user %></li>
 			
-			<% else %>
+			<% end %>
 			
-			<li><%= link_to "Submit", submit_path %></li>
-			
-			  <% if Rails.env.development? %>
+			<% if Rails.env.development? %>
+				
 				<li><%= link_to "Sign In", signin_path %></li>
-			  <% end %>
-
+			
 			<% end %>
 			
 			<li><a href="#">Privacy</a></li>
