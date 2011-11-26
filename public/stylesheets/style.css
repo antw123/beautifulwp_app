@@ -978,6 +978,13 @@ a.submit-main:active{
 	color: #f55d2d;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2){
+    	
+		#logo a {
+			background-image: url(/images/logo_small@2x.png);
+			-webkit-background-size:116px 28px;}
+  }
+
 @media only screen and (max-width:480px){
 		
 		#navigation-top .inner {
@@ -989,13 +996,12 @@ a.submit-main:active{
 			margin-right: auto;
 			width: 116px;
 			height: 28px;
-			margin-top: 12px;
 		}
 		
 		#logo a {
 			background: url(/images/logo_small.png) no-repeat;
 			width: 116px;
-			height: 28px; }
+			height: 28px;}
 			
 		#navbar {
 			float:right;
@@ -1005,7 +1011,7 @@ a.submit-main:active{
 			height: 54px; }
 			
 		#nav li {
-			margin-top: 0px; }
+			margin-top: -1px; }
 		
 		#nav li a {
 			padding-right: 6px;
