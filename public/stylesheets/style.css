@@ -1094,7 +1094,9 @@ a.submit-main:active{
 		#logo a {
 			background-image: url(/images/logo_small@2x.png);
 			-webkit-background-size:116px 28px;
-			background-repeat: no-repeat;}
+			background-repeat: no-repeat; }
+		#nav li {
+			margin-top: -3px; }
   }
 
 
