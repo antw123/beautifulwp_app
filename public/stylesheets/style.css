@@ -978,7 +978,7 @@ a.submit-main:active{
 	color: #f55d2d;
 }
 
-@media only screen and (max-width:640px){
+@media only screen and (max-width:480px){
 		
 		#navigation-top .inner {
 			width:300px;
@@ -989,7 +989,7 @@ a.submit-main:active{
 			margin-right: auto;
 			width: 116px;
 			height: 28px;
-			margin-top: 11px;
+			margin-top: 12px;
 		}
 		
 		#logo a {
@@ -1003,6 +1003,9 @@ a.submit-main:active{
 		
 		#navigation-top {
 			height: 54px; }
+			
+		#nav li {
+			margin-top: 0px; }
 		
 		#nav li a {
 			padding-right: 6px;
