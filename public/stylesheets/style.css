@@ -978,13 +978,6 @@ a.submit-main:active{
 	color: #f55d2d;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2){
-    	
-		#logo a {
-			background-image: url(/images/logo_small@2x.png);
-			-webkit-background-size:116px 28px;}
-  }
-
 @media only screen and (max-width:480px){
 		
 		#navigation-top .inner {
@@ -1011,7 +1004,7 @@ a.submit-main:active{
 			height: 54px; }
 			
 		#nav li {
-			margin-top: -1px; }
+			margin-top: -2px; }
 		
 		#nav li a {
 			padding-right: 6px;
@@ -1094,8 +1087,15 @@ a.submit-main:active{
 			display: none;
 		}
 		                    
-
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2){
+    	
+		#logo a {
+			background-image: url(/images/logo_small@2x.png);
+			-webkit-background-size:116px 28px;
+			background-repeat: no-repeat;}
+  }
 
 
 
