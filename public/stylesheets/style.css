@@ -985,6 +985,7 @@ a.submit-main:active{
 		}
 		
 		#logo {
+			float: none;
 			margin-left: auto;
 			margin-right: auto;
 			width: 116px;
@@ -997,24 +998,8 @@ a.submit-main:active{
 			height: 28px;}
 			
 		#navbar {
-			float:right;
+			display: none;
 		}
-		
-		#navigation-top {
-			height: 54px; }
-			
-		#nav li {
-			margin-top: -2px; }
-		
-		#nav li a {
-			padding-right: 6px;
-			padding-left: 6px; }
-		
-		#navbar li ul {
-				width: 103px; }
-			
-    	#navbar ul ul li {
-			width: 73px;}
 		
 
 		#main-content {
@@ -1095,8 +1080,7 @@ a.submit-main:active{
 			background-image: url(/images/logo_small@2x.png);
 			-webkit-background-size:116px 28px;
 			background-repeat: no-repeat; }
-		#nav li {
-			margin-top: -3px; }
+
   }
 
 
