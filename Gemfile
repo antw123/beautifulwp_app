@@ -5,7 +5,7 @@ gem 'rails', '3.0.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+
 gem 'will_paginate', '~> 3.0.2'
 gem "mini_magick"
 gem "carrierwave"
@@ -15,6 +15,10 @@ gem 'sunspot_rails'
 
 group :development do
 	gem "annotate", "~> 2.4.0"
+end
+
+group :development, :test do
+  gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
 # Use unicorn as the web server
