@@ -3,10 +3,11 @@ class ShowcasesController < ApplicationController
   before_filter :authenticate, :only => [:new, :create, :edit, :update, :destroy]
   
   def index
-    @search = Showcase.search do
-      fulltext params[:search]
-    end
-    @showcases = @search.results
+    #@search = Showcase.search do
+    #  fulltext params[:search]
+    #end
+    #@showcases = @search.results
+    redirect_to root_path
   end
   
   def new
