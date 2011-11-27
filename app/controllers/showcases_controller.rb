@@ -1,6 +1,6 @@
 class ShowcasesController < ApplicationController
   
-  before_filter :authenticate, :only => [:new, :edit, :update, :destroy]
+  before_filter :authenticate, :only => [:new, :create, :edit, :update, :destroy]
   
   def index
     @search = Showcase.search do

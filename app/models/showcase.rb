@@ -15,7 +15,7 @@ class Showcase < ActiveRecord::Base
   
   validates :title, :author, :feature1, :feature2, 
             :feature3, :feature3, :feature4, :price,
-            :description, :site, :site_url, :image_url,  :presence => true
+            :description, :site, :site_url, :presence => true
   
   #validates :related, :presence => true
 
