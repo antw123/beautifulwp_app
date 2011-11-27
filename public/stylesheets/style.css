@@ -862,19 +862,15 @@ a.submit-main:active{
 	
 .error, .notice, .success {
 	    padding:.8em; 
-	    margin-bottom: 1em;
+	    margin-bottom: 0px;
 	    border: 2px solid #ddd; 
 	    margin-top: 50px;
-		width: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 10; }
+		width: 100%; }
 
 .error {
-	background:#FBE3E4;
-	color:#8a1f11;
-	border-color:#FBC2C4; }
+	background:#ffdfdf;
+	color:#b12121;
+	border-color:#df5353; }
 
 .notice {
 	background:#FFF6BF;
@@ -882,17 +878,17 @@ a.submit-main:active{
 	border-color:#FFD324; }
 
 .success {
-	background:#E6EFC2;
-	color:#264409;
-	border-color:#C6D880; }
+	background:#f2f9cc;
+	color:#65751c;
+	border-color:#abc330; }
 
 .error a {
-	color:#8a1f11; }
+	color:#b12121; }
 
 .notice a {
 	color:#514721; }
 
-.success a {color:#264409;}
+.success a {color:#65751c;}
 
 .field input {
 	width: 920px;
@@ -911,11 +907,16 @@ a.submit-main:active{
 	color: #464646;
 }
 
+.actions {
+	padding-bottom: 20px;
+}
+
 .user-show-left {
 	background: #f0f0f0;
 	width: 150px;
 	float: left;
 	margin-top: 15px;
+	margin-bottom: 30px;
 }
 
 .user-show-left p {
