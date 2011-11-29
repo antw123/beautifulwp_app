@@ -26,7 +26,6 @@ class ShowcasesController < ApplicationController
     end
     rescue Exception => e
         puts "#{Time.now} ERROR #{e.message}"
-    end
   end
   
   def show
