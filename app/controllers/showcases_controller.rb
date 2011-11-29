@@ -1,6 +1,6 @@
 class ShowcasesController < ApplicationController
   
-  before_filter :authenticate
+  before_filter :authenticate , :only => [:new, :create, :edit, :update, :destroy]
   
   def index
     #@search = Showcase.search do
@@ -24,8 +24,6 @@ class ShowcasesController < ApplicationController
       @title = "Add New Theme"
       render 'new'
     end
-    rescue Exception => e
-        puts "#{Time.now} ERROR #{e.message}"
   end
   
   def show
