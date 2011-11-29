@@ -1073,6 +1073,8 @@ a.submit-main:active{
 		#footer {
 			display: none;
 		}
+		
+		#show-social { width: 300px; }
 		                    
 }
 
