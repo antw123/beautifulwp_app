@@ -1,6 +1,6 @@
 class ShowcasesController < ApplicationController
   
-  before_filter :authenticate
+ 
   
   def index
     #@search = Showcase.search do
@@ -29,8 +29,8 @@ class ShowcasesController < ApplicationController
   end
   
   def show
-    @showcase = Showcase.find_by_id(params[:id])
-    @title    = "#{@showcase.title} by #{@showcase.author}"
+    @showcase  = Showcase.find_by_id(params[:id])
+    @title     = "#{@showcase.title} by #{@showcase.author}"
     @showcases = @showcase.find_related_tags.limit(4) 
   end
   
