@@ -19,7 +19,7 @@ class ShowcasesController < ApplicationController
     @showcase = current_user.showcases.build(params[:showcase])
     if @showcase.save
       flash[:success] = "Theme Successfully Added!"
-      redirect_to showcase_path(@showcase)
+      redirect_to root_path
     else
       @title = "Add New Theme"
       render 'new'
