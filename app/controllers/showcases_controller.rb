@@ -1,6 +1,6 @@
 class ShowcasesController < ApplicationController
   
- 
+  before_filter :authenticate
   
   def index
     #@search = Showcase.search do
