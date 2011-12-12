@@ -8,6 +8,10 @@
 		
 			<li><%= link_to "About", about_path %></li>
 			
+			<li><%= link_to "Twitter", "http://www.twitter.com/beautiful_wp", :target => '_blank' %></li>
+			
+			<li><%= link_to "Facebook", "http://www.facebook.com/pages/Beautifulwp/172800222809084", :target => '_blank' %></li>
+			
 			<% if signed_in? %>
 
 			<li><%= link_to "Profile", current_user %></li>
@@ -24,7 +28,7 @@
 			
 			<li><a href="#">Terms Of Use</a></li>
 			
-			<li><a href="#">Beautiful Wordpress Themes</a></li>
+			<li><%= link_to "Beautiful Wordpress Themes", root_path %></li>
 			
 			<% if signed_in? %>
 
