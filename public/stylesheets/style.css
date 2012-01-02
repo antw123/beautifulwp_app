@@ -488,6 +488,9 @@ a.next_page:hover, .pagination a:hover {
 	float: right;
 	width: 260px; }
 
+/* ----------------------------------------------------------------------- */
+/* Ad Styles
+/* ----------------------------------------------------------------------- */
 .ad125 {
 	float: left;
 	margin-bottom: 10px;
@@ -498,11 +501,20 @@ a.next_page:hover, .pagination a:hover {
 	margin-bottom: 10px;
 	margin-right: 0px; }
 	
+.ad250 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px; }
+	
+.filler {
+	width:250px;
+	height:250px;
+	background-color: #fff; }
+	
 /* ----------------------------------------------------------------------- */
 /* Footer
 /* ----------------------------------------------------------------------- */
 	
-
 #footer {
 	background: url(/images/footer_bg.png) repeat;
 	border-top: 1px solid #cfcfcf;
@@ -558,7 +570,8 @@ a.next_page:hover, .pagination a:hover {
 #full-content h2 {
 	padding-top: 20px;
 	font-size: 20px;
-	color: #464646; }
+	color: #464646;
+	text-align: center; }
 	
 #full-content hr { 
 	background-color: #d7dcdf;
@@ -568,10 +581,11 @@ a.next_page:hover, .pagination a:hover {
 	border: none; }
 	
 #full-content p {
-	font-size: 13px;
+	font-size: 16px;
 	color: #464646;
-	line-height: 24px;
-	padding-top: 6px; }
+	line-height: 30px;
+	padding-top: 10px;
+	text-align: center; }
 	
 /* ----------------------------------------------------------------------- */
 /* Blog Page
@@ -823,6 +837,23 @@ a.submit-main:active{
 	margin-top: 18px;
 	margin-left: 40px; }
 	
+.button-container.about_ {
+   margin-top: 0px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-bottom: 30px;
+   width: 155px;}
+
+.button-container.about_ a {
+   margin-top: 0px;
+   margin-left: 0px;
+   margin-right: 0px;
+}
+
+a.submit-main.about_1 {
+   float: none;
+}
+	
 #show-social {
 	margin-bottom: 15px;
 	margin-left: 15px;
@@ -920,10 +951,11 @@ a.submit-main:active{
 }
 
 .user-show-left p {
-	margin-left: 25px; 
+	font-size: 13px; 
 }
 .user-show-left a {
 	color: #696969;
+	font-size: 13px;
 }
 
 .user-show-left a:hover {
@@ -940,14 +972,17 @@ a.submit-main:active{
 	margin-top: 13px;
 	color: #464646;
 	padding-right: 25px;
-	margin-left: 25px; 
+	margin-left: 25px;
+	text-align: center; 
 }
 
 
 .user-show-right p {
 	padding-right: 25px;
 	margin-left: 25px;
-	margin-bottom: 10px; 
+	margin-bottom: 10px;
+	font-size: 13px;
+	text-align: none; 
 }
 
 .users  {

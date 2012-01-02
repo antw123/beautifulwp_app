@@ -1,6 +1,6 @@
 <div class="inner">
 	
-	<span id="copyright">Copyright &copy; 2011 Beautifulwp.</span>
+	<span id="copyright">Copyright &copy; 2012 Method House</span>
 	
 	<div id="footer-nav">
 		
@@ -12,29 +12,29 @@
 			
 			<li><%= link_to "Facebook", "http://www.facebook.com/pages/Beautifulwp/172800222809084", :target => '_blank' %></li>
 			
+			<li><%= link_to "Advertise", advertise_path %></li>
+			
 			<% if signed_in? %>
 
 			<li><%= link_to "Profile", current_user %></li>
 			
 			<% end %>
 			
-			<% if Rails.env.development? %>
+			<% if Rails.env.development? && !signed_in? %>
 				
 				<li><%= link_to "Sign In", signin_path %></li>
 			
 			<% end %>
-			
-			<li><a href="#">Privacy</a></li>
-			
-			<li><a href="#">Terms Of Use</a></li>
-			
-			<li><%= link_to "Beautiful Wordpress Themes", root_path %></li>
 			
 			<% if signed_in? %>
 
 			<li><%= link_to "Sign Out", signout_path %></li>
 
 			<% end %>
+			
+			<li><%= link_to "Privacy", privacy_path %></li>
+			
+			<li><%= link_to "Terms of Use", terms_path %></li>
 			
 			<li class="lt"><%= link_to "Contact", contact_path %></li>
 		

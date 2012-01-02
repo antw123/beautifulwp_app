@@ -2,7 +2,7 @@ module ApplicationHelper
   
   #Return a title on a per-page basis.
   def title
-    base_title = "Beautiful Wp - Showcasing Beautiful Wordpress Themes"
+    base_title = "WordPress Theme Gallery | Beautiful Free & Premium Wordpress Themes"
     if @title.nil?
       base_title
     else

@@ -2,7 +2,7 @@ class PagesController < ApplicationController
   
   def home
     @title = "Home"
-    @showcases = Showcase.paginate(:page => params[:page], :per_page => 8)
+    @showcases = Showcase.paginate(:page => params[:page], :per_page => 20)
     @showcase = Showcase.find_by_id(params[:id])
   end
 
@@ -16,6 +16,18 @@ class PagesController < ApplicationController
 
   def contact
     @title = "Contact"
+  end
+  
+  def privacy
+    @title = "Privacy Policy"
+  end
+  
+  def terms
+    @title = "Terms of Use"
+  end
+  
+  def advertise
+    @title = "Advertise"
   end
 
 end

@@ -5,14 +5,17 @@ BeautifulwpApp::Application.routes.draw do
   resources :showcases 
   resources :tags,     :only => [:show]
 
-  root              :to => "pages#home"
+  root                  :to => "pages#home"
   
-  match '/about',   :to => 'pages#about'
-  match '/submit',  :to => 'pages#submit'
-  match '/contact', :to => 'pages#contact'
-  match '/signup',  :to => 'users#new'
-  match '/signin',  :to => 'sessions#new'
-  match '/signout', :to => 'sessions#destroy'
+  match '/about',       :to => 'pages#about'
+  match '/advertise',   :to => 'pages#advertise'
+  match '/privacy',     :to => 'pages#privacy'
+  match '/terms',       :to => 'pages#terms'
+  match '/submit',      :to => 'pages#submit'
+  match '/contact',     :to => 'pages#contact'
+  match '/signup',      :to => 'users#new'
+  match '/signin',      :to => 'sessions#new'
+  match '/signout',     :to => 'sessions#destroy'
 
 
 
