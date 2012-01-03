@@ -249,7 +249,8 @@ form.search-form {
 	
 #left-content { 
 	width: 632px;
-	float: left; }
+	float: left;
+	margin-bottom: 118px; }
 	
 #left-content .inner {
 	width: 632px; }
@@ -410,8 +411,7 @@ form.search-form {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	margin-top: 60px;
-	margin-bottom: 118px; }
+	margin-top: 60px; }
 	
 .pages {
 	margin-bottom: 25px;
