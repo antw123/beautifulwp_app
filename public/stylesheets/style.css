@@ -548,6 +548,14 @@ a.next_page:hover, .pagination a:hover {
 #footer-ul li.lt {
 	padding-right: 0px; }
 	
+.inner #copyright a  {
+	color: #878787;
+}
+
+.inner #copyright a:hover {
+	text-decoration: underline;
+}
+	
 /* ----------------------------------------------------------------------- */
 /* About Page
 /* ----------------------------------------------------------------------- */
