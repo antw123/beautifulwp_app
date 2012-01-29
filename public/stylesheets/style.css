@@ -1119,6 +1119,18 @@ a.submit-main.about_1 {
 		}
 		
 		#show-social { width: 300px; }
+		
+		#full-content-bubble {
+			width: 300px; }
+
+		#full-content {
+			width: 270px; }
+			
+		#full-content hr { 
+			width: 270px; }
+			
+		.button-container.about_ {
+		   width: 100px;}
 		                    
 }
 
