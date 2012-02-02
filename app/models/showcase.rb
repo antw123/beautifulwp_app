@@ -9,7 +9,7 @@ class Showcase < ActiveRecord::Base
   mount_uploader :image, ImageUploader
   
   searchable do
-    text :title, :author, :feature1, :feature2, :feature3, :feature4, :description, :tag_list
+    text :title, :author, :feature1, :feature2, :feature3, :feature4, :description, :tag_list, :site
   end
   
   
