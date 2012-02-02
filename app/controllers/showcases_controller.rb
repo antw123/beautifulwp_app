@@ -7,6 +7,9 @@ class ShowcasesController < ApplicationController
       fulltext params[:search]
     end
     @showcases = @search.results
+    if params[:search].blank?
+      redirect_to root_path
+    end
   end
   
   def new
