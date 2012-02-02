@@ -8,9 +8,9 @@ class Showcase < ActiveRecord::Base
   acts_as_taggable
   mount_uploader :image, ImageUploader
   
-  #searchable do
-  #  text :title, :author, :feature1, :feature2, :feature3, :feature4, :description, :tag_list
-  #end
+  searchable do
+    text :title, :author, :feature1, :feature2, :feature3, :feature4, :description, :tag_list
+  end
   
   
   validates :title, :author, :feature1, :feature2, 

@@ -44,6 +44,10 @@ ul {
 	overflow: hidden;
 	visibility: hidden;
 	width: 0px; }
+	
+::selection { background: #f55d2d; color: #fff; }
+
+::-moz-selection { background: #f55d2d; color: #fff; }
 
 	
 /* ----------------------------------------------------------------------- */
@@ -505,6 +509,10 @@ a.next_page:hover, .pagination a:hover {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-left: 5px; }
+	
+.ad260 {
+	margin-top: 10px;
+	margin-bottom: 20px; }
 	
 .filler {
 	width:250px;
