@@ -30,7 +30,7 @@ class ShowcasesController < ApplicationController
   
   def show
     @showcase  = Showcase.find_by_id(params[:id])
-    @title     = "#{@showcase.title} by #{@showcase.author}"
+    @title     = "Beautifulwp - #{@showcase.title} by #{@showcase.author}"
     @showcases = @showcase.find_related_tags.limit(4) 
   end
   

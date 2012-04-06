@@ -6,7 +6,7 @@ module ApplicationHelper
     if @title.nil?
       base_title
     else
-      "#{base_title} | #{@title}"
+      "Beautifulwp - #{@title}"
     end
   end
 end

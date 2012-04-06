@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   
   def home
-    @title = "Home"
+    @title = "WordPress Theme Gallery | Free & Premium Wordpress Themes | Best WordPress Themes"
     @showcases = Showcase.paginate(:page => params[:page], :per_page => 20)
     @showcase = Showcase.find_by_id(params[:id])
   end
