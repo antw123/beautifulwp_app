@@ -321,10 +321,15 @@ form.search-form {
 	
 .twitter {
 	display: inline-block;
-	margin-right: -25px; }
+	float: left; }
 
 .googleplus {
-	display: inline-block; }
+	display: inline-block;
+	float: left; }
+	
+.pinterest {
+	display: inline-block;
+	float: left; }
 	
 /* ----------------------------------------------------------------------- */
 /* Theme Showcases Main
